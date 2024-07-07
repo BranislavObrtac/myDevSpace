@@ -1,0 +1,35 @@
+.navigation {
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.elements {
+  max-width: calc(1280px - 32px);
+  list-style: none;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.link {
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.3rem;
+
+  background-color: hsl(0, 0%, 10%);
+
+  &:hover {
+    background-color: hsl(0, 0%, 20%);
+  }
+  &:active {
+    background-color: hsl(0, 0%, 30%);
+  }
+}

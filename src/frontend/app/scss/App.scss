@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./Normalize.scss";
+
+:root {
+  --font-family: "Work Sans", sans-serif;
+  --smooth-scroll: smooth;
+  scroll-behavior: var(--smooth-scroll);
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+
+a {
+  outline: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
