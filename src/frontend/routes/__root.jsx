@@ -7,7 +7,6 @@ export const Route = createRootRoute({
   component: () => (
     <div className="app-wrapper">
       <Hero />
-
       <div className="app-content">
         <Outlet />
       </div>
