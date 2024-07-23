@@ -1,0 +1,50 @@
+@import "../../app/common/Variables.scss";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hero_shadow {
+  position: absolute;
+
+  .shadow_group {
+    position: absolute;
+    width: 1280px;
+    top: calc(-1280px / 2);
+    z-index: 0;
+    flex: none;
+  }
+  .ellipse_1 {
+    position: absolute;
+    background-color: rgb(110, 180, 250);
+    left: calc(50% - 25rem / 2);
+    width: 25rem;
+    height: 40rem;
+    filter: blur(180px);
+    flex: none;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+
+    .subtitle {
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    span {
+      color: $blue-color;
+    }
+  }
+}

@@ -12,12 +12,12 @@ const activeProps = {
 const Navigation = () => {
   return (
     <nav className={styles.navigation}>
+      <div className={styles.home}>
+        <Link to="/" activeProps={activeProps}>
+          HOME
+        </Link>
+      </div>
       <ul className={styles.elements}>
-        <li className={styles.element}>
-          <Link className={styles.link} to="/" activeProps={activeProps}>
-            Home
-          </Link>
-        </li>
         <li className={styles.element}>
           <Link className={styles.link} to={"/about"} activeProps={activeProps}>
             About

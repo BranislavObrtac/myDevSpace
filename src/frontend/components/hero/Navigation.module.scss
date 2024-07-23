@@ -1,0 +1,54 @@
+@import "../../app/common/Variables.scss";
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elements {
+  max-width: calc(1280px - 32px);
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.link {
+  border: 2px solid $blue-color;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+
+  color: $white-color_1;
+  border-radius: 0.2rem;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+
+  &:hover {
+    background-color: $blue-color;
+    color: $dark-color_1;
+  }
+  &:active {
+    background-color: $blue-color_1;
+    border-color: $blue-color_1;
+    color: $dark-color_1;
+    transition: none;
+  }
+}
+
+.home {
+  a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: $white-color_1;
+    text-decoration: none;
+  }
+}

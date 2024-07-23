@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-router": "^1.43.12",
     "@vitejs/plugin-react": "^4.3.1",
+    "classnames": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
