@@ -5,7 +5,6 @@ import styles from "./Hero.module.scss";
 const Hero = () => {
   return (
     <div className={styles.wrapper}>
-      <Navigation />
       <div className={styles.hero_shadow}>
         <div className={styles.shadow_group}>
           <div className={styles.ellipse_1}></div>

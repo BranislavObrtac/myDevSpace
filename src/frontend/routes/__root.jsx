@@ -6,6 +6,7 @@ import Hero from "../components/hero/Hero";
 export const Route = createRootRoute({
   component: () => (
     <div className="app-wrapper">
+      <Navigation />
       <Hero />
       <div className="app-content">
         <Outlet />

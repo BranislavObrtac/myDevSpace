@@ -1,31 +1,35 @@
 @import "../../app/common/Variables.scss";
 
 .wrapper {
-  position: relative;
   width: 100%;
-
+  position: relative;
   border-bottom: 1px solid rgb(63, 63, 63);
   margin-bottom: 1rem;
 }
 
 .hero_shadow {
   position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   .shadow_group {
-    position: absolute;
+    position: relative;
     width: 1280px;
     top: calc(-1280px / 2);
     z-index: 0;
     flex: none;
   }
+
   .ellipse_1 {
     position: absolute;
     background-color: rgb(110, 180, 250);
-    left: calc(50% - 25rem / 2);
-    width: 25rem;
+    width: 20rem;
     height: 40rem;
     filter: blur(180px);
     flex: none;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -39,7 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 900;
 
     .subtitle {
@@ -50,5 +54,10 @@
     span {
       color: $blue-color;
     }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .content {
   }
 }
