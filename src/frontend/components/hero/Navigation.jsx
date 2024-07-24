@@ -28,12 +28,12 @@ const Navigation = () => {
       </div>
       <ul className={styles.elements}>
         <li className={styles.element}>
-          <Link className={styles.link} to={"/about"}>
+          <Link className={styles.link} to={"/experience"}>
             Experience
           </Link>
         </li>
         <li className={styles.element}>
-          <Link className={styles.link} to={"/projects"}>
+          <Link className={styles.link} to={"/work"}>
             Work
           </Link>
         </li>
@@ -72,29 +72,17 @@ const Navigation = () => {
       {isOpen && (
         <ul className={styles.elements_mobile} ref={menuRef}>
           <li className={styles.element}>
-            <Link
-              className={styles.link}
-              to={"/about"}
-              onClick={() => setIsOpen(false)}
-            >
+            <Link className={styles.link} to={"/experience"}>
               Experience
             </Link>
           </li>
           <li className={styles.element}>
-            <Link
-              className={styles.link}
-              to={"/projects"}
-              onClick={() => setIsOpen(false)}
-            >
+            <Link className={styles.link} to={"/work"}>
               Work
             </Link>
           </li>
           <li className={styles.element}>
-            <Link
-              className={styles.link}
-              to={"/contact"}
-              onClick={() => setIsOpen(false)}
-            >
+            <Link className={styles.link} to={"/contact"}>
               Contact
             </Link>
           </li>
