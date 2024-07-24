@@ -43,12 +43,15 @@ a {
 .app-wrapper {
   display: flex;
   flex-direction: column;
+  max-width: calc(1280px - 2rem);
   width: 100%;
-  max-width: 1280px;
   position: relative;
+  padding: 1rem 0;
 }
 
 .app-content {
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+
+  line-height: 140%;
 }
