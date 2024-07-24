@@ -50,16 +50,70 @@
   color: $blue-color;
 }
 
+.btn_more_about_me {
+  background-color: $blue-color;
+  color: $dark-color_1;
+  border: none;
+  border-radius: $border-radius;
+  padding: 0.5rem 1rem;
+  text-wrap: nowrap;
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  font-size: 1.15rem;
+  gap: 0.5rem;
+
+  transition: background-color 0.3s ease;
+
+  svg {
+    fill: $dark-color_1;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    background-color: $blue-color_1;
+  }
+
+  &:active {
+    background-color: $blue-color_2;
+    transition: none;
+  }
+}
+
 .more_about_me {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.show_more_about_me {
-  grid-template-rows: 1fr;
-}
-
-.inner {
+.photo_wrapper_small {
+  width: clamp(8rem, 10%, 10rem);
+  height: clamp(8rem, 10%, 10rem);
+  border-radius: 50%;
   overflow: hidden;
+  margin: 0 0 1rem 0;
+  float: left;
+  margin: 0 1rem 1rem 0;
+
+  img {
+    transform: scale(1.1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.present_section {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid $blue-color;
+  border-right: 2px solid $blue-color;
+  width: 100%;
+  h2 {
+    font-size: 5rem;
+  }
 }
