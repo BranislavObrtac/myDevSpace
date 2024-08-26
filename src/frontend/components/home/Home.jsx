@@ -12,9 +12,9 @@ const Home = () => {
 
   return (
     <section className={styles.wrapper}>
-      <article className={styles.present_section}>
+      {/*  <article className={styles.present_section}>
         <h2>PECKY</h2>
-      </article>
+      </article> */}
       <article className={styles.section_about}>
         <h2 className={styles.section_title}>About me</h2>
         <div className={styles.about}>
