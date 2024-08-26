@@ -13,7 +13,9 @@ const Experience = () => {
             <div>
               <p>
                 Company:{" "}
-                <Link to={"www.sazp.sk"}>Slovak environment agency</Link>
+                <Link to={"https://www.sazp.sk/"}>
+                  Slovak environment agency
+                </Link>
               </p>
               <p>Duration: 2022 - Present</p>
               <p>
