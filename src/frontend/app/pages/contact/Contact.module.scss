@@ -1,0 +1,19 @@
+@import "../../common/Variables.scss";
+.contactContainer {
+  margin: auto;
+  border: 1px solid $white-color_2;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 15%);
+
+  a {
+    color: $white-color_1;
+    text-decoration: none;
+  }
+}
+.contactDetails,
+.socialMedia {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid $blue-color;
+}
