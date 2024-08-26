@@ -1,0 +1,16 @@
+@import "../../app//common/Variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    &:hover {
+      filter: brightness(0.8);
+      outline: 1px solid $white-color_2;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+  }
+}
